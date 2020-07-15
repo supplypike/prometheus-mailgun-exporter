@@ -13,7 +13,7 @@ jobs:
     - name: Publish to Registry
       uses:  docker/build-push-action@v1
       with:
-        name: casestack/prometheus-mailgun-exporter
+        repository: casestack/prometheus-mailgun-exporter
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tag_with_ref: true
