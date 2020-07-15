@@ -14,7 +14,7 @@
 DOCKER_ARCHS      := amd64
 DOCKER_IMAGE_NAME := prometheus-mailgun-exporter
 DOCKER_IMAGE_TAG  := $(subst /,-,$(shell git rev-parse --abbrev-ref HEAD))
-DOCKER_REPO       := missionlane
+DOCKER_REPO       := casestack
 
 BUILD_DATE   := $(shell date +%Y%m%d-%H:%M:%S)
 BUILD_USER   := $(shell whoami)
